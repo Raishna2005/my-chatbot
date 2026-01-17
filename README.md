@@ -30,30 +30,40 @@ This project helped me understand API-based AI inference and simple web-based de
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
-2. Install dependencies
+
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 3. Set up the .env file
 
 Create a file named .env in the project root and add your Hugging Face API token:
 
+```
 HF_API_TOKEN=your_huggingface_api_token_here
+```
 
 
 The .env file is added to .gitignore to prevent accidental exposure of sensitive data.
 
-4. Run the application
+### 4. Run the application
+```bash
 python app.py
-
+```
 
 After running the command, Gradio will provide a local URL to access the chatbot in your browser.
 
-🧠 Approach
+---
+
+## 🧠 Approach
 
 This project uses the Hugging Face Inference API so the chatbot can run without requiring a GPU on the local machine.
 Gradio was chosen because it allows quick creation of a simple and interactive web interface with minimal code.
 
-🚧 Challenges Faced
+---
+
+## 🚧 Challenges Faced
 
 Encountered StopIteration errors with an initial model, which were resolved by switching to Qwen/Qwen2.5-7B-Instruct.
 
